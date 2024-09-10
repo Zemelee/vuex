@@ -26,7 +26,7 @@ jobs:
         # 部署到XX分支
         branch: main
         publish_dir: ./dist
-        github_token: ${{ secret.CICDDEMO }}
-        user_name: ${{ secret.MY_USER_NAME }}
-        user_email: ${{ secret.MY_USER_EMAIL }}
+        github_token: ${{ secrets.CICDDEMO }}
+        # user_name: ${{ secrets.MY_USER_NAME }} 需要单独设置actions key
+        # user_email: ${{ secrets.MY_USER_EMAIL }}
         commit_message: 自动部署
